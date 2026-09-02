@@ -4,9 +4,16 @@
  * Simple standalone PHP test script.
  * Run with: php test.php
  */
-
+/**
+ * เปรียบเทียบค่าจริงกับค่าที่คาดไว้และแสดงผลการทดสอบ
+ *
+ * @param string $label ชื่อการทดสอบ
+ * @param mixed $actual ค่าที่ได้รับจริง
+ * @param mixed $expected ค่าที่คาดหวัง
+ */
 function test(string $label, mixed $actual, mixed $expected): void
 {
+    // สงสัยอะไรไปคุยกับพี่วุธนะครับ
     $pass = $actual === $expected;
     $status = $pass ? "PASS" : "FAIL";
     echo "[$status] $label\n";
