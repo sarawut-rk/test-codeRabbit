@@ -4,13 +4,7 @@
  * Simple standalone PHP test script.
  * Run with: php test.php
  */
-/**
- * เปรียบเทียบค่าจริงกับค่าที่คาดไว้และแสดงผลการทดสอบ
- *
- * @param string $label ชื่อการทดสอบ
- * @param mixed $actual ค่าที่ได้รับจริง
- * @param mixed $expected ค่าที่คาดหวัง
- */
+//test 11
 function test(string $label, mixed $actual, mixed $expected): void
 {
     // สงสัยอะไรไปคุยกับพี่วุธนะครับ
@@ -23,7 +17,19 @@ function test(string $label, mixed $actual, mixed $expected): void
     }
 }
 
+
+function testAll(string $path): string
+{
+    // --- Example tests ---
+    test('addition works', 1 + 1, 2);
+    test('string concat works', 'Hello, ' . 'World!', 'Hello, World!');
+    test('array count', count([1, 2, 3]), 3);
+
+    return  "addition";
+}
+
 // --- Example tests ---
+
 
 test('addition works', 1 + 1, 2);
 
