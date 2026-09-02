@@ -1,10 +1,4 @@
 <?php
-
-/**
- * Simple standalone PHP test script.
- * Run with: php test.php
- */
-
 function test(string $label, mixed $actual, mixed $expected): void
 {
     $pass = $actual === $expected;
