@@ -24,4 +24,6 @@ test('string concat works', 'Hello, ' . 'World!', 'Hello, World!');
 
 test('array count', count([1, 2, 3]), 3);
 
+test('empty array count', count([]), 0);
+
 echo "\nDone.\n";
