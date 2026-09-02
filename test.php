@@ -4,7 +4,7 @@
  * Simple standalone PHP test script.
  * Run with: php test.php
  */
-//test
+//test 11
 function test(string $label, mixed $actual, mixed $expected): void
 {
     $pass = $actual === $expected;
