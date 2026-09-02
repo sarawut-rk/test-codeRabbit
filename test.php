@@ -7,6 +7,7 @@
 //test 11
 function test(string $label, mixed $actual, mixed $expected): void
 {
+    // สงสัยอะไรไปคุยกับพี่วุธนะครับ
     $pass = $actual === $expected;
     $status = $pass ? "PASS" : "FAIL";
     echo "[$status] $label\n";
